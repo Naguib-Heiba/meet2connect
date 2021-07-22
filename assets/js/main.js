@@ -223,6 +223,22 @@
 
 
 
+(function() {
+    if (!localStorage.getItem('cookieconsent')) {
+        document.body.innerHTML += '\
+<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#eee;color:#000;text-align:center;width:100%;z-index:99999;">\
+    This website uses cookies. By continuing to use this website, you agree to their use.<br>\
+    <div class="cookieconsentAgree"><a href="#" style="color:#fff; background-color:#ff5400;" class="btn">I agree</a></div>\
+</div>\
+';
+        document.querySelector('.cookieconsentAgree a').onclick = function(e) {
+            e.preventDefault();
+            document.querySelector('.cookieconsent').style.display = 'none';
+            localStorage.setItem('cookieconsent', true);
+        };
+    }
+})();
+
 
 
 
