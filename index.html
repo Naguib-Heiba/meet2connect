@@ -32,7 +32,18 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
- 
+ <style>
+   .modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+
+}
+ </style>
 </head>
 <body>
   <!-- ======== canvas-original ========= -->
@@ -78,7 +89,19 @@
              and to have personal and self-chosen 1:1 meetings on all business & technology topics</h2>
             <div class="d-flex">
               <a href="#contact" class="btn-get-started scrollto">Request demo</a>
-             <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
+           
+              <div id="titi" style="display:none;">
+                
+                <video controls preload="metadata" autoplay class="vbox-inline vbox-figilo embed-responsive-item embed-responsive embed-responsive-21by9" allowfullscreen>
+                  <source src="assets/img/m2c.mp4" type="video/mp4">
+       
+                </video>
+              </div>
+                  <div class="pulse-box">
+                    <a class="venobox btn-watch-video" data-autoplay="true" data-vbtype="inline"
+                      href="#titi">Watch Video <i class="icofont-play-alt-2"></i></a>
+                  </div>
+             <!-- <a href="assets/img/m2c.mp4" class="venobox btn-watch-video" data-vbtype="inline" data-autoplay="true" > Watch Video <i class="icofont-play-alt-2"></i></a> -->
             </div>
           </div>
           </div>
